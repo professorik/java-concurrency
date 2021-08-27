@@ -1,0 +1,18 @@
+# api = http://localhost:9999
+
+POST {{api}}/image/batch
+content-type: multipart/form-data
+images: MultipartFile[]
+###
+
+POST {{api}}/image/search?threshold=?
+content-type: multipart/form-data
+image: MultipartFile
+
+###
+
+DELETE {{api}}/image/{{id}}
+###
+
+DELETE {{api}}/image/purge
+###
